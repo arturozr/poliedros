@@ -53,14 +53,28 @@ it('Deberia retornar "Debe ingresar solo números positivos" cuando los valores 
   expect(component.verificar(8,-12,6)).toContain("Debe ingresar solo números positivos");
 });
 
-
 it('Deberia retornar "Debe ingresar solo números positivos" cuando los valores introducidos sean numeros negativos', () => {
   expect(component.verificar(8,12,-6)).toContain("Debe ingresar solo números positivos");
 });
 
-
 it('Deberia retornar "Debe ingresar solo números positivos" cuando los valores introducidos sean numeros negativos', () => {
   expect(component.verificar(-8,-12,-6)).toContain("Debe ingresar solo números positivos");
+});
+
+it('Deberia retornar "Solo se permiten números enteros" cuando los valores introducidos sean numeros con decimales', () => {
+  expect(component.verificar(8.2,12.45,6.8)).toContain("Solo se permiten números enteros");
+});
+
+it('Deberia retornar "Solo se permiten números enteros" cuando los valores introducidos sean numeros con decimales', () => {
+  expect(component.verificar(8.2,12.45,6)).toContain("Solo se permiten números enteros");
+});
+
+it('Deberia retornar "Solo se permiten números enteros" cuando los valores introducidos sean numeros con decimales', () => {
+  expect(component.verificar(8.2,12,6)).toContain("Solo se permiten números enteros");
+});
+
+it('Deberia retornar "Solo se permiten números enteros" cuando los valores introducidos sean numeros con decimales', () => {
+  expect(component.verificar(8.2,12,6.8)).toContain("Solo se permiten números enteros");
 });
 
 });
