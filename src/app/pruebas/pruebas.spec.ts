@@ -44,4 +44,23 @@ it('Deberia retornar "Debe introducir solo numeros" cuando los valores introduci
 });
 
 
+it('Deberia retornar "Debe ingresar solo números positivos" cuando los valores introducidos sean numeros negativos', () => {
+  expect(component.verificar(-8,12,6)).toContain("Debe ingresar solo números positivos");
+});
+
+
+it('Deberia retornar "Debe ingresar solo números positivos" cuando los valores introducidos sean numeros negativos', () => {
+  expect(component.verificar(8,-12,6)).toContain("Debe ingresar solo números positivos");
+});
+
+
+it('Deberia retornar "Debe ingresar solo números positivos" cuando los valores introducidos sean numeros negativos', () => {
+  expect(component.verificar(8,12,-6)).toContain("Debe ingresar solo números positivos");
+});
+
+
+it('Deberia retornar "Debe ingresar solo números positivos" cuando los valores introducidos sean numeros negativos', () => {
+  expect(component.verificar(-8,-12,-6)).toContain("Debe ingresar solo números positivos");
+});
+
 });
