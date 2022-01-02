@@ -11,6 +11,21 @@ describe('pruebas', () => {
     expect(component).toBeTruthy();
   });
 
+  it('Deberia retornar "Debe llenar todos los campos" cuando el usuario deja algun campo vacio', () => {
+    expect(component.verificar("",12,6)).toContain("Debe llenar todos los campos");
+  });
+  
+  it('Deberia retornar "Debe llenar todos los campos" cuando el usuario deja algun campo vacio', () => {
+    expect(component.verificar(8,"",6)).toContain("Debe llenar todos los campos");
+  });
+  
+  it('Deberia retornar "Debe llenar todos los campos" cuando el usuario deja algun campo vacio', () => {
+    expect(component.verificar(8,12,"")).toContain("Debe llenar todos los campos");
+  });
+  
+  it('Deberia retornar "Debe llenar todos los campos" cuando el usuario deja algun campo vacio', () => {
+    expect(component.verificar("","","")).toContain("Debe llenar todos los campos");
+  });
 
 it('Deberia retornar "Si es un poliedro" cuando los valores introducidos den como resultado 2', () => {
   expect(component.verificar(8,12,6)).toContain("Si es un poliedro");
@@ -76,5 +91,7 @@ it('Deberia retornar "Solo se permiten números enteros" cuando los valores intr
 it('Deberia retornar "Solo se permiten números enteros" cuando los valores introducidos sean numeros con decimales', () => {
   expect(component.verificar(8.2,12,6.8)).toContain("Solo se permiten números enteros");
 });
+
+
 
 });
