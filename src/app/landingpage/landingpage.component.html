@@ -1,0 +1,104 @@
+<div class="container p-5 center">
+  <div class="row">
+    <div class="col-4">
+      <div class="p-4">
+        <div class="card">
+          <div class="card-header">Información del estudiante</div>
+          <div class="card-body">
+            <ul>
+              <li>
+                <p class="card-text"><b>Nombre:</b> Arturo Zili Rios</p>
+              </li>
+              <li>
+                <p class="card-text"><b>Materia:</b>Pruebas de software</p>
+              </li>
+              <li>
+                <p class="card-text"><b>Tipo de examen:</b> Extraordinario</p>
+              </li>
+              <li>
+                <p class="card-text"><b>Semestre:</b> Quinto</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <br>    
+        <div class="d-grid gap-2 col-6 mx-auto">
+            <button class="btn btn-dark" type="button" [routerLink]= "['/ui']">Probar formula</button>
+            <a class="btn btn btn-outline-dark btn-xl js-scroll-trigger" role="button" href="https://github.com/arturozr/poliedros" target="_blank nodepend">Github</a>
+          </div>
+      </div>
+    </div>
+
+    <div class="col-8">
+      <p>
+        <a
+          class="btn btn-dark"
+          data-bs-toggle="collapse"
+          href="#multiCollapseExample1"
+          role="button"
+          aria-expanded="false"
+          aria-controls="multiCollapseExample1"
+          >Información acerca de Euler</a
+        >
+        <button
+          class="btn btn-secondary"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#multiCollapseExample2"
+          aria-expanded="false"
+          aria-controls="multiCollapseExample2"
+        >
+          Formula
+        </button>
+        <button
+          class="btn btn-danger"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target=".multi-collapse"
+          aria-expanded="false"
+          aria-controls="multiCollapseExample1 multiCollapseExample2"
+        >
+          Mostrar ambos
+        </button>
+      </p>
+      <div class="row">
+        <div class="col">
+          <div class="collapse multi-collapse" id="multiCollapseExample1">
+            <div class="card card-body">
+              <h5>Leonhard Euler</h5>
+              <h6>(1707/04/15 - 1783/09/18)</h6>
+              <ul>
+                <li>Uno de los matemáticos más destacados de la historia.</li>
+                <li><b>Obras:</b> Introductio in Analysis Infinitorum,etc.</li>
+                <li><b>Campos:</b> Matemáticas, física</li>
+                <li>
+                  <b>Reconocidopor:</b> Número e; Fórmula de Euler, Identidad de
+                  Euler; Característica de Euler
+                </li>
+                <li><b>Padres:</b> Marguerite Brucker y Paul Euler</li>
+                <li>
+                  <b>Cónyuges:</b> Katharina Gsell (1734-1773), Salome Abigail
+                  Gsell (1776-1783)
+                </li>
+                <li>
+                  <b>Hijos:</b> Johann, Christoph, Charlotte, Karl, Carl, Helene
+                </li>
+                <li><b>Nombre:</b> Leonhard Paul Euler</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="collapse multi-collapse" id="multiCollapseExample2">
+            <div class="card card-body">
+                <h5>Formula:</h5>
+                <p class="text-center">
+                    <b>V - E + F = 2</b>
+                </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
