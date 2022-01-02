@@ -1,0 +1,47 @@
+<div class="container center p-5"> 
+    <div class="card">
+        <div class="card-header">
+        Fórmula de euler
+        </div>
+        <div class="card-body">
+        <div class="row">
+            <div class="col-6 ">
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="inputGroup-sizing-default">V</span>
+                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" id="valor1" [(ngModel)]="valor1" name="valor1">
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="inputGroup-sizing-default">E</span>
+                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" id="valor2" [(ngModel)]="valor2" name="valor2">
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="inputGroup-sizing-default">F</span>
+                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" id="valor3" [(ngModel)]="valor3" name="valor3">
+                </div>
+                <div class="d-grid gap-2 col-6 mx-auto">
+                    <button class="btn btn-dark" type="button" (click)="validar()">Verificar</button>
+                </div>
+            </div>
+            <div class="col-6 p-4">
+                <h5>Teorema de Euler</h5>
+                <p>
+                    V = Números de Vertices
+                    <br>
+                    E = Números de Aristas
+                    <br>
+                    F = Números de Caras
+                    <br>
+                </p>
+                <br>
+                <h5>Formula:</h5>
+                <p class="text-center">
+                    <b>V - E + F = 2</b>
+                </p>
+                <div id="alerta" class="alert alert-success" role="alert">
+                    {{ respuesta }}
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>

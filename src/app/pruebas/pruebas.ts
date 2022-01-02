@@ -8,6 +8,9 @@ export class pruebas {
   f=undefined;
   
   verificar(v,e,f){  
+    if(v == (parseInt(v))) v= parseInt(v);
+    if(e == (parseInt(e))) e= parseInt(e);
+    if(f == (parseInt(f))) f= parseInt(f);
  
     if( v.toString().trim().length == 0 || e.toString().trim().length === 0 || f.toString().trim().length === 0 ) return this.espoliedro = "Debe llenar todos los campos";
     
