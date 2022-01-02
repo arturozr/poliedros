@@ -6,11 +6,13 @@ import { AppComponent } from './app.component';
 import { UiComponent } from './ui/ui.component';
 
 import { FormsModule } from '@angular/forms';
+import { LandingpageComponent } from './landingpage/landingpage.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    UiComponent
+    UiComponent,
+    LandingpageComponent
   ],
   imports: [
     BrowserModule,
