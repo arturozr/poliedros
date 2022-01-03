@@ -1,33 +1,25 @@
-# Poliedros
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.6.
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
-
 # poliedros
 
 Examen extraordinario basado en la formula de los poliedros de euler
 
 # v0.1 tag
+
+# Documentación 
+
+ - PDF con visión y alcance: [poliedros.pdf](https://github.com/arturozr/poliedros/files/7801027/poliedros.pdf)
+  
+ - Archivo comprimido con PDF y .tex  [Documentacion.zip](https://github.com/arturozr/poliedros/files/7801036/Documentacion.zip)
+
+# SCREENSHOTS
+
+<h2> Protección de ramas </h2>
+
+![Screenshot_select-area_20220103025610](https://user-images.githubusercontent.com/96809361/147913365-75a3eff5-1bb7-4a81-96b1-7291487231fa.png)
+
+<h2>Pruebas</h2>
+
+![Screenshot_select-area_20220103030132](https://user-images.githubusercontent.com/96809361/147913777-5946bf1f-932a-4aed-8f88-3fc18504a797.png)
+  
+ # Diagrama de arquitecturas
+ 
+ ![diagrama_de_arquitectura](https://user-images.githubusercontent.com/96809361/147923086-6781b299-73c5-4856-95a7-cb798218068e.png)
